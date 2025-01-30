@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* Adjusted scroll position to compensate for #header { margin-top: 6.5rem; }*/
+  scroll-padding-top: 6.5rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Merriweather", serif;
+}
+
+/* navbar styles */
+.navbar {
+  background-color: #ccd5ae !important;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.navbar-brand {
+  padding-left: 10px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+  text-transform: lowercase;
+  /* letter-spacing: 0.5px; */
+}
+
+/* header styles */
+#header {
+  /* background-color: #e9edc9; */
+  background: linear-gradient(to bottom, #ccd5ae, #e9edc9);
+  margin-top: 5rem;
+}
+
+#welcome-message {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#business-name {
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(45deg, #ff004f, #cc0000);
+  font-size: 3rem;
+  font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+#location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2e7d32;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+#location i {
+  font-size: 1.5rem;
+  color: #d32f2f;
+  transition: transform 0.2s ease-in-out, color 0.2s;
+}
+
+#location a:hover i {
+  color: #ff5722;
+}
+
+.welcome-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+/* about us styles */
+#about-us {
+  /* background-color: #fefae0; */
+  background: linear-gradient(to bottom, #e9edc9, #fefae0);
+}
+
+.feature {
+  padding: 0 20px;
+}
+
+.feature p {
+  font-size: 0.9rem;
+}
+
+.bi {
+  font-size: 1.25rem;
+  padding-right: 15px;
+  color: #000;
+}
+
+#experience {
+  color: #1e3d58;
+  font-family: "Crimson Pro", serif;
+}
+
+#traditional {
+  color: #d47f34;
+  font-family: "EB Garamond", serif;
+}
+
+#eco-friendly {
+  color: #459e55;
+  font-family: "Roboto Slab", serif;
+}
+
+#customised-orders {
+  color: #8a4b8e;
+  font-family: "Quicksand", serif;
+}
+
+/* portfolio styles */
+#portfolio {
+  /* background-color: #faedcd; */
+  background: linear-gradient(to bottom, #fefae0, #faedcd);
+}
+
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-body {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: #fffaf0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* contact us styles */
+#contact {
+  /* background-color: #e7c8a0; */
+  background: linear-gradient(to bottom, #faedcd, #e7c8a0);
+  color: #fff;
+}
+
+.form-control {
+  border: 2px solid #000;
+  margin-bottom: 15px;
+}
+
+.contact-right form input[type="text"]::placeholder,
+.contact-right form input[type="email"]::placeholder,
+.contact-right form input[type="tel"]::placeholder,
+.contact-right form input[type="text"]::placeholder,
+.contact-right form textarea::placeholder {
+  font-size: 0.9rem;
+  color: #9c7d5f;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+  background-color: #f6eee3;
+  color: #5a3e2b;
+  border: 1px solid #b68b5f;
+}
+
+.reach-us {
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+.contact-right {
+  background: #d3ae84;
+  padding: 20px;
+  border-radius: 5px;
+  color: #333;
+}
+
+#send {
+  background-color: #b67b4d;
+  color: #fff;
+  border: 1px solid #9c6233;
+}
+
+#send:hover {
+  background-color: #9c6233;
+  color: #fefae0;
+}
+
+/* notification */
+#notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  max-width: 400px;
+  z-index: 1100;
+  font-size: 0.9rem;
+}
+
+/* footer styles */
+#footer {
+  /* background-color: #d4a373; */
+  background: linear-gradient(to bottom, #e7c8a0, #d4a373);
+  padding: 20px;
+  color: #5a3e2b;
+}
+
+.back-to-top {
+  color: #4a3422;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+@media (max-width: 575px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbar-toggler {
+    scale: 0.75;
+  }
+
+  #header {
+    margin-top: 5rem;
+  }
+
+  .small-carousel {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #welcome-message {
+    font-size: 1.25rem;
+  }
+
+  #business-name {
+    font-size: 1.75rem;
+  }
+
+  #location {
+    font-size: 1rem;
+  }
+
+  .welcome-message-container {
+    margin: 10px 15px;
+  }
+
+  .feature p {
+    font-size: 0.8rem;
+  }
+
+  .card-body {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .contact-right form input[type="text"]::placeholder,
+  .contact-right form input[type="email"]::placeholder,
+  .contact-right form input[type="tel"]::placeholder,
+  .contact-right form textarea::placeholder {
+    font-size: 0.75rem;
+  }
+
+  #send {
+    font-size: 0.9rem;
+  }
+
+  #notification-container {
+    top: 15px;
+    right: calc((100vw - 90%) / 2);
+    max-width: 90%;
+    font-size: 0.8rem;
+  }
+
+  #footer {
+    padding: 10px;
+  }
+
+  .copyright,
+  .back-to-top {
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .py-4 {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #welcome-message {
+    font-size: 1.5rem;
+  }
+
+  #business-name {
+    font-size: 2rem;
+  }
+
+  #location {
+    font-size: 1rem;
+  }
+
+  .feature {
+    padding: 0 8px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  #welcome-message {
+    font-size: 1.25rem;
+  }
+
+  #business-name {
+    font-size: 1.5rem;
+  }
+
+  #location {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-left p {
+    margin-bottom: 8px;
+  }
+}
